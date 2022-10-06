@@ -211,6 +211,7 @@ body {
   display: flex;
   align-items: center;
   transition: background-color 0.5s;
+  user-select: none;
 }
 .selection .btn-atk:hover,
 .selection .btn-def:hover {
@@ -266,6 +267,14 @@ body {
 }
 .selection .btn-def img {
   margin-right: 0.5em;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
