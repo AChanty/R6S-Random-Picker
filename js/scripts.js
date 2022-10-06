@@ -684,6 +684,19 @@ buttonAtk.addEventListener('click', function () { // appelle une fonction au cli
     imgSelect.setAttribute('src', attackers[i].image)
     iconSelect.setAttribute('src', attackers[i].icon)
     nameSelect.textContent = attackers[i].name
+
+    //animations
+    imgSelect.classList.remove('operator__img'); // reset animation
+    void imgSelect.offsetWidth;
+    imgSelect.classList.add('operator__img'); // restart animation
+
+    iconSelect.classList.remove('operator__icon'); // reset animation
+    void iconSelect.offsetWidth;
+    iconSelect.classList.add('operator__icon'); // restart animation
+
+    nameSelect.classList.remove('operator__name'); // reset animation
+    void nameSelect.offsetWidth;
+    nameSelect.classList.add('operator__name'); // restart animation
 })
 
 buttonDef.addEventListener('click', function () { // appelle une fonction au clic sur le boutton
