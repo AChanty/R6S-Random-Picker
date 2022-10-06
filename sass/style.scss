@@ -76,9 +76,11 @@ body {
         @media screen and (max-width: 995px) {
             max-width: 45%;
         }
+
         @media screen and (max-width: 768px) {
             max-width: 55%;
         }
+
         @media screen and (max-width: 426px) {
             max-width: 65%;
         }
@@ -160,12 +162,13 @@ body {
 
         &:hover {
             background-color: #AE592F;
+
             .icon-white {
                 transform: scale(1.1);
                 transition: transform .5s;
             }
         }
-        
+
     }
 
     .btn-atk img {
@@ -187,13 +190,14 @@ body {
 
         &:hover {
             background-color: #3C86AA;
+
             .icon-white {
                 transform: scale(1.1);
                 transition: transform .5s;
             }
         }
     }
-    
+
     .icon-white {
         transform: scale(1.0);
         transition: transform .5s;
