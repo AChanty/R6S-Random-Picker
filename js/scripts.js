@@ -660,65 +660,55 @@ const allOps = [
 let imgSelect = document.querySelector(".operator__img")
 let iconSelect = document.querySelector(".operator__icon")
 let nameSelect = document.querySelector(".operator__name")
-
-// https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/media#fankits
-// prendre les backgrounds pour les faire correpondre aux opérateurs de leur saison
-
-
-// affiche opérateur aléatoire quand on arrive sur la page
-let result = Math.floor(Math.random() * allOps.length) // modifier au chiffre inférieur au nombre d'opérateurs présents
-let i = result
-imgSelect.setAttribute('src', allOps[i].image)
-iconSelect.setAttribute('src', allOps[i].icon)
-nameSelect.textContent = allOps[i].name
-
-
-//////////////////////////////////////////////////////
 let buttonAtk = document.querySelector(".btn-atk")
 let buttonDef = document.querySelector(".btn-def")
 
+// --------------------------------------------------------------------------------------------
+// -------------------------- PERSO ALEATOIRE À L'ARRIVÉ SUR LA PAGE --------------------------
+landingRandom() // appelle fonction "landingRandom"
+
+function landingRandom () {
+    let i = Math.floor(Math.random() * allOps.length) // arrondir au chiffre inférieur au nombre d'opérateurs présents
+    const { image, icon, name } = allOps[i]
+    imgSelect.setAttribute('src', image)
+    iconSelect.setAttribute('src', icon)
+    nameSelect.textContent = name
+}
+
+// -----------------------------------------------------------------------
+// -------------------------- BOUTTON ATTACKERS --------------------------
 buttonAtk.addEventListener('click', function () { // appelle une fonction au clic sur le boutton
-
-    let result = Math.floor(Math.random() * attackers.length)
-    let i = result
-    imgSelect.setAttribute('src', attackers[i].image)
-    iconSelect.setAttribute('src', attackers[i].icon)
-    nameSelect.textContent = attackers[i].name
-
-    //animations
-    imgSelect.classList.remove('operator__img'); // reset animation
-    void imgSelect.offsetWidth;
-    imgSelect.classList.add('operator__img'); // restart animation
-
-    iconSelect.classList.remove('operator__icon'); // reset animation
-    void iconSelect.offsetWidth;
-    iconSelect.classList.add('operator__icon'); // restart animation
-
-    nameSelect.classList.remove('operator__name'); // reset animation
-    void nameSelect.offsetWidth;
-    nameSelect.classList.add('operator__name'); // restart animation
+    let i = Math.floor(Math.random() * attackers.length)
+    const { image, icon, name } = attackers[i]
+    imgSelect.setAttribute('src', image)
+    iconSelect.setAttribute('src', icon)
+    nameSelect.textContent = name
+    animation() // appelle fonction "animation"
 })
 
+// -----------------------------------------------------------------------
+// -------------------------- BOUTTON DEFENDERS --------------------------
 buttonDef.addEventListener('click', function () { // appelle une fonction au clic sur le boutton
-
-    let result = Math.floor(Math.random() * defenders.length)
-    let i = result
-    imgSelect.setAttribute('src', defenders[i].image)
-    iconSelect.setAttribute('src', defenders[i].icon)
-    nameSelect.textContent = defenders[i].name
-
-    //animations
-    imgSelect.classList.remove('operator__img'); // reset animation
-    void imgSelect.offsetWidth;
-    imgSelect.classList.add('operator__img'); // restart animation
-
-    iconSelect.classList.remove('operator__icon'); // reset animation
-    void iconSelect.offsetWidth;
-    iconSelect.classList.add('operator__icon'); // restart animation
-
-    nameSelect.classList.remove('operator__name'); // reset animation
-    void nameSelect.offsetWidth;
-    nameSelect.classList.add('operator__name'); // restart animation
-
-
+    let i = Math.floor(Math.random() * defenders.length)
+    const { image, icon, name } = defenders[i]
+    imgSelect.setAttribute('src', image)
+    iconSelect.setAttribute('src', icon)
+    nameSelect.textContent = name
+    animation() // appelle fonction "animation"
 })
+
+// ----------------------------------------------------------------
+// -------------------------- ANIMATIONS --------------------------
+function animation() {
+        imgSelect.classList.remove('operator__img'); // reset animation
+        void imgSelect.offsetWidth;
+        imgSelect.classList.add('operator__img'); // restart animation
+    
+        iconSelect.classList.remove('operator__icon'); // reset animation
+        void iconSelect.offsetWidth;
+        iconSelect.classList.add('operator__icon'); // restart animation
+    
+        nameSelect.classList.remove('operator__name'); // reset animation
+        void nameSelect.offsetWidth;
+        nameSelect.classList.add('operator__name'); // restart animation
+}
