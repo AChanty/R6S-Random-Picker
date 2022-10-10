@@ -31,7 +31,9 @@ function insertOpInfos(role) {
     let i = Math.floor(Math.random() * role.length) // prend un chiffre aléatoire par rapport au nombre d'opérateurs correspondant au role, arrondit au chiffre inférieur
     const { image, icon, name } = role[i]
     imgSelect.setAttribute('src', image) // remplace l'image par celle de l'opérateur tiré au hasard
+    imgSelect.setAttribute('alt', name) // ajoute alt de l'image correpondant au nom de l'opérateur
     iconSelect.setAttribute('src', icon) // remplace l'icone par celui de l'opérateur tiré au hasard
+    iconSelect.setAttribute('alt', name) // ajoute alt de l'icone correpondant au nom de l'opérateur
     nameSelect.textContent = name // remplace le nom par celui de l'opérateur tiré au hasard
     animation() // appelle fonction "animation"
 }
