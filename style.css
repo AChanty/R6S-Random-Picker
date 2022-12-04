@@ -125,39 +125,6 @@ body {
   z-index: -1;
 }
 
-video,
-canvas {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-  object-fit: fill;
-  background: black;
-}
-
-div.wrap {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: -1;
-}
-
-canvas {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'>    <feGaussianBlur stdDeviation='10'/></filter>#blur");
-  -webkit-filter: blur(10px) brightness(0.7);
-  filter: blur(10px) brightness(0.7);
-  opacity: 0.5;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .operator {
   width: 100%;
   display: flex;
@@ -323,4 +290,4 @@ img {
   -ms-user-select: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

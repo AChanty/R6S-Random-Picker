@@ -292,6 +292,11 @@ export const defenders = [
         "icon": "img/op-icons/smoke.svg"
     },
     {
+        "name": "Solis",
+        "image": "img/op-portraits/solis.webp",
+        "icon": "img/op-icons/solis.png"
+    },
+    {
         "name": "Tachanka",
         "image": "img/op-portraits/tachanka.webp",
         "icon": "img/op-icons/tachanka.svg"
