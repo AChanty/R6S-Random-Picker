@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Rainbow Six Siege: Random Picker</title>
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-      <link rel="stylesheet" href="styles.css">
-      <script type="module" src="js/scripts.js" defer></script>
-   </head>
-   <body>
-      <div class="main-content">
-         <div class="head">
 
-            <img class="head__logo" src="img/season/Brutal Swarm logo.png" width="380" height="94" alt="Brutal Swarm logo">
-            <video id="background-video" autoplay loop muted>
-               <source src="img/season/SolarRaid.mp4" type="video/mp4">
-               </video>
-               <div class="wrap">
-                  <canvas id='mycanvas'></canvas>
-                </div>
-         </div>
-         <div class="operator">
-            <div class="operator__portrait">
-               <img class="operator__img" src="img/op-portraits/grim.webp" width="513" height="139" alt="grim">
-            </div>
-            <img class="operator__icon" src="img/op-icons/grim.svg" width="150" height="150" alt="grim">
-            <p class="operator__name">Grim</p>
-         </div>
-         <div class="selection">
-            <div class="selection__title">
-               <h2>Select your role</h2>
-            </div>
-            <div class="selection__btn-wrapper">
-               <button class="btn-atk">
-               Attacker
-               <img src="img/icons/swords.svg" class="icon-white" width="32" height="32" alt="">
-               </button>
-               <button class="btn-def">
-               <img src="img/icons/shield.svg" class="icon-white" width="32" height="32" alt="">
-               Defender
-               </button>
-            </div>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rainbow Six Siege: Random Picker</title>
+   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.png"> -->
+   <link rel="shortcut icon" type="image/x-icon" href="img/op-icons/solis.png">
+   <link rel="stylesheet" href="styles.css">
+   <script type="module" src="js/scripts.js" defer></script>
+</head>
+
+<body>
+   <div class="main-content">
+      <div class="head">
+         <img class="head__logo" src="img/season/Brutal Swarm logo.png" width="380" height="94" alt="Brutal Swarm logo">
+         <video id="background-video" autoplay loop muted>
+            <source src="img/season/SolarRaid.mp4" type="video/mp4">
+         </video>
+         <div class="wrap">
+            <canvas id='mycanvas'></canvas>
          </div>
       </div>
-   </body>
+      <div class="operator">
+         <div class="operator__portrait">
+            <img class="operator__img" src="img/op-portraits/grim.webp" width="513" height="139" alt="grim">
+         </div>
+         <img class="operator__icon" src="img/op-icons/grim.svg" width="150" height="150" alt="grim">
+         <p class="operator__name">Grim</p>
+      </div>
+      <div class="selection">
+         <div class="selection__title">
+            <h2>Select your role</h2>
+         </div>
+         <div class="selection__btn-wrapper">
+            <button class="btn-atk">
+               Attacker
+               <img src="img/icons/swords.svg" class="icon-white" width="32" height="32" alt="">
+            </button>
+            <button class="btn-def">
+               <img src="img/icons/shield.svg" class="icon-white" width="32" height="32" alt="">
+               Defender
+            </button>
+         </div>
+      </div>
+   </div>
+</body>
+
 </html>
