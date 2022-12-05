@@ -165,10 +165,8 @@ canvas {
 .operator__portrait {
   display: flex;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background: url("img/season/Brutal Swarm background.png");
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 .operator__img {
   margin-left: auto;
