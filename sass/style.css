@@ -78,6 +78,30 @@ td, th {
     opacity: 1;
   }
 }
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 @font-face {
   font-family: "ghost_clanregular";
   src: url("fonts/ghostclan-webfont.woff2") format("woff2"), url("fonts/ghostclan-webfont.woff") format("woff"), url("fonts/ghostclan.ttf") format("ttf");
@@ -91,6 +115,17 @@ td, th {
 
 body {
   background-color: #0A0C10;
+}
+
+.github {
+  position: absolute;
+  bottom: 0.5vh;
+  right: 0.5vw;
+  opacity: 0.7;
+  transition: 0.5s;
+  -webkit-animation: pulse 4s ease 0s infinite normal forwards;
+          animation: pulse 4s ease 0s infinite normal forwards;
+  z-index: -1;
 }
 
 .main-content {
@@ -115,6 +150,50 @@ body {
   }
 }
 
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+video,
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background: black;
+}
+
+div.wrap {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+
+canvas {
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .operator {
   width: 100%;
   display: flex;
@@ -125,10 +204,9 @@ body {
 .operator__portrait {
   display: flex;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background: url("img/season/Brutal Swarm background.png");
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .operator__img {
   margin-left: auto;
