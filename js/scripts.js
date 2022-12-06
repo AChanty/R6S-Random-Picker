@@ -8,7 +8,7 @@ const buttonDef = document.querySelector(".btn-def")
 
 // --------------------------------------------------------------------------------------------
 // -------------------------- PERSO ALEATOIRE À L'ARRIVÉ SUR LA PAGE --------------------------
-// landingRandom() // appelle fonction "landingRandom"
+landingRandom() // appelle fonction "landingRandom"
 
 function landingRandom() {
     insertOpInfos(allOps)
