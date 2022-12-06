@@ -28,6 +28,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2em 0;
+
+    @include large-screen {
+        height: 100vh;
+        margin: 0;
+        justify-content: space-evenly;
+    }
 }
 
 .head {
@@ -37,6 +43,10 @@ body {
     &__logo {
         width: 20%;
         margin-bottom: 1em;
+
+        @include large-screen {
+            margin-bottom: 0;
+        }
 
         @include medium-screen {
             width: 50%;
