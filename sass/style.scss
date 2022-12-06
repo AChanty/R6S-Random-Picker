@@ -129,7 +129,7 @@ canvas {
         animation: appear 2s;
 
         @include large-screen {
-            max-width: 100%;
+            width: 900px;
         }
 
         @include medium-screen {
