@@ -1,294 +1,294 @@
-@import "libs/__reset.scss";
-@import "libs/__variables.scss";
-@import "libs/__responsive.scss";
-@import "libs/__keyframes.scss";
-@import "utils/__fonts.scss";
+@import 'libs/__reset.scss';
+@import 'libs/__variables.scss';
+@import 'libs/__responsive.scss';
+@import 'libs/__keyframes.scss';
+@import 'utils/__fonts.scss';
 
 .icon-white {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg) brightness(105%) contrast(102%);
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(340deg)
+      brightness(105%) contrast(102%);
 }
 
 body {
-    background-color: #0A0C10;
+   background-color: #0a0c10;
 }
 
 .github {
-    position: absolute;
-    bottom: 0.5vh;
-    right: 0.5vw;
-    opacity: 0.7;
-    transition: .5s;
-    animation: pulse 4s ease 0s infinite normal forwards;
+   position: absolute;
+   bottom: 0.5vh;
+   right: 0.5vw;
+   opacity: 0.7;
+   transition: 0.5s;
+   animation: pulse 4s ease 0s infinite normal forwards;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 2em 0;
 
-    @include large-screen {
-        height: 100vh;
-        margin: 0;
-        justify-content: space-evenly;
-    }
+   @include large-screen {
+      height: 100vh;
+      margin: 0;
+      justify-content: space-evenly;
+   }
 }
 
 .head {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 
-    &__logo {
-        width: 19%;
-        margin-bottom: 1em;
+   &__logo {
+      width: 19%;
+      margin-bottom: 1em;
 
-        @include large-screen {
-            margin-bottom: 0;
-        }
+      @include large-screen {
+         margin-bottom: 0;
+      }
 
-        @include medium-screen {
-            width: 50%;
-        }
-    }
+      @include medium-screen {
+         width: 50%;
+      }
+   }
 }
 
 // video & canvas background
 #background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+   height: 100vh;
+   width: 100vw;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
 }
 
 video,
 canvas {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    object-fit: fill;
-    background: black;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -100;
+   object-fit: fill;
+   background: black;
 }
 
 div.wrap {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: -1;
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: -1;
 }
 
 canvas {
-    opacity: (0.5);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+   opacity: (0.5);
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
 }
 
 ////////////////
 
 .operator {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
 
-    &__portrait {
-        display: flex;
-        width: 100%;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background: url("img/season/Brutal Swarm background.png");
-        // background-size: cover;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-    }
+   &__portrait {
+      display: flex;
+      width: 100%;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background: url("img/season/Brutal Swarm background.png");
+      // background-size: cover;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+   }
 
-    &__img {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 27%;
-        max-height: 100%;
-        -webkit-animation: appear 2;
-        -moz-animation: appear 2;
-        -o-animation: appear 2;
-        animation: appear 2s;
+   &__img {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 27%;
+      max-height: 100%;
+      -webkit-animation: appear 2;
+      -moz-animation: appear 2;
+      -o-animation: appear 2;
+      animation: appear 2s;
 
-        @include large-screen {
-            width: 900px;
-        }
+      @include large-screen {
+         width: 900px;
+      }
 
-        @include medium-screen {
-            max-width: 50%;
-        }
+      @include medium-screen {
+         max-width: 50%;
+      }
 
-        @media screen and (max-width: 995px) {
-            max-width: 45%;
-        }
+      @media screen and (max-width: 995px) {
+         max-width: 45%;
+      }
 
-        @media screen and (max-width: 768px) {
-            max-width: 55%;
-        }
+      @media screen and (max-width: 768px) {
+         max-width: 55%;
+      }
 
-        @media screen and (max-width: 426px) {
-            max-width: 65%;
-        }
-    }
+      @media screen and (max-width: 426px) {
+         max-width: 65%;
+      }
+   }
 
-    &__name {
-        font-family: $siegeFonts;
-        font-size: 4em;
-        color: white;
-        user-select: none;
+   &__name {
+      font-family: $siegeFonts;
+      font-size: 4em;
+      color: white;
+      user-select: none;
 
-        @media screen and (max-width: 768px) {
-            font-size: 2em;
-        }
-    }
+      @media screen and (max-width: 768px) {
+         font-size: 2em;
+      }
+   }
 
-    &__icon {
-        @media screen and (max-width: 428px) {
-            width: 30%;
-        }
-    }
+   &__icon {
+      @media screen and (max-width: 428px) {
+         width: 30%;
+      }
+   }
 
-    &__icon,
-    &__name {
-        -webkit-animation: fadein 4s;
-        -moz-animation: fadein 4s;
-        -o-animation: fadein 4s;
-        animation: fadein 4s;
-    }
+   &__icon,
+   &__name {
+      -webkit-animation: fadein 4s;
+      -moz-animation: fadein 4s;
+      -o-animation: fadein 4s;
+      animation: fadein 4s;
+   }
 }
 
 .operator__icon-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .selection {
+   margin-top: 1em;
 
-    margin-top: 1em;
+   &__btn-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
 
-    &__btn-wrapper {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+   &__title h2 {
+      color: white;
+      text-align: center;
+      font-size: 1.4em;
+      font-family: $siegeFonts;
+      user-select: none;
+      margin-bottom: 0.5em;
 
-    &__title h2 {
-        color: white;
-        text-align: center;
-        font-size: 1.4em;
-        font-family: $siegeFonts;
-        user-select: none;
-        margin-bottom: 0.5em;
+      @include large-screen {
+         font-size: 1.8em;
+      }
+   }
 
-        @include large-screen {
-            font-size: 1.8em;
-        }
-    }
+   .btn-atk,
+   .btn-def {
+      font-family: $siegeFonts;
+      color: white;
+      border: none;
+      font-size: 1.3em;
+      padding: 11px 24px;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.5s;
+      user-select: none;
 
-    .btn-atk,
-    .btn-def {
-        font-family: $siegeFonts;
-        color: white;
-        border: none;
-        font-size: 1.3em;
-        padding: 11px 24px;
-        display: flex;
-        align-items: center;
-        transition: background-color .5s;
-        user-select: none;
+      @include large-screen {
+         padding: 20px 40px;
+         font-size: 2em;
+      }
 
-        @include large-screen {
-            padding: 20px 40px;
-            font-size: 2em;
-        }
+      &:hover {
+         transition: background-color 0.5s;
+         cursor: pointer;
 
-        &:hover {
-            transition: background-color 0.5s;
-            cursor: pointer;
+         .icon-white {
+            transform: scale(1.1);
+            transition: transform 0.5s;
 
-            .icon-white {
-                transform: scale(1.1);
-                transition: transform .5s;
-
-                @include large-screen {
-                    transform: scale(1.3);
-                }
+            @include large-screen {
+               transform: scale(1.3);
             }
-        }
-    }
+         }
+      }
+   }
 
-    .btn-atk {
-        background-color: $color-atk;
-        margin-right: 0.6em;
-        border-left: 5px solid #d75b2a;
+   .btn-atk {
+      background-color: $color-atk;
+      margin-right: 0.6em;
+      border-left: 5px solid #d75b2a;
 
-        @media screen and (max-width: 438px) {
-            margin-right: 0;
-            border-bottom: 0;
-        }
+      @media screen and (max-width: 438px) {
+         margin-right: 0;
+         border-bottom: 0;
+      }
 
-        &:hover {
-            background-color: #AE592F;
-        }
-    }
+      &:hover {
+         background-color: #ae592f;
+      }
+   }
 
-    .btn-atk img {
-        margin-left: 1em;
-    }
+   .btn-atk img {
+      margin-left: 1em;
+   }
 
-    .btn-def {
-        background-color: $color-def;
-        border-right: 5px solid #2499ff;
+   .btn-def {
+      background-color: $color-def;
+      border-right: 5px solid #2499ff;
 
-        @media screen and (max-width: 438px) {
-            margin-right: 0;
-            border-bottom: 0;
-        }
+      @media screen and (max-width: 438px) {
+         margin-right: 0;
+         border-bottom: 0;
+      }
 
-        @media screen and (max-width: 426px) {
-            margin-top: 0.5em;
-        }
+      @media screen and (max-width: 426px) {
+         margin-top: 0.5em;
+      }
 
-        &:hover {
-            background-color: #3C86AA;
-        }
-    }
+      &:hover {
+         background-color: #3c86aa;
+      }
+   }
 
-    .icon-white {
-        transform: scale(1.0);
-        transition: transform .5s;
+   .icon-white {
+      transform: scale(1);
+      transition: transform 0.5s;
 
-        @include large-screen {
-            transform: scale(1.2);
-        }
-    }
+      @include large-screen {
+         transform: scale(1.2);
+      }
+   }
 
-    .btn-def img {
-        margin-right: 1em;
-    }
+   .btn-def img {
+      margin-right: 1em;
+   }
 }
 
 img {
-    user-select: none;
-    -webkit-user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+   user-select: none;
+   -webkit-user-drag: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
