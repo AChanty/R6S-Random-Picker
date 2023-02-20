@@ -11,11 +11,8 @@ This is a personnal project, about picking a random character to play depending 
    -  [Links](#links)
 -  [My process](#my-process)
    -  [Built with](#built-with)
-   -  [What I learned](#what-i-learned)
    -  [Continued development](#continued-development)
-   -  [Useful resources](#useful-resources)
 -  [Author](#author)
--  [Acknowledgments](#acknowledgments)
 
 ## Overview
 
