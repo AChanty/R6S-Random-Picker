@@ -27,7 +27,7 @@ export const attackers = [
    {
       name: 'Brava',
       image: 'img/op-portraits/brava.webp',
-      icon: 'img/op-icons/brava.webp',
+      icon: 'img/op-icons/brava.png',
    },
    {
       name: 'Buck',
