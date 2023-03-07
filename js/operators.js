@@ -25,6 +25,11 @@ export const attackers = [
       icon: 'img/op-icons/blitz.svg',
    },
    {
+      name: 'Brava',
+      image: 'img/op-portraits/brava.webp',
+      icon: 'img/op-icons/brava.webp',
+   },
+   {
       name: 'Buck',
       image: 'img/op-portraits/buck.webp',
       icon: 'img/op-icons/buck.svg',
