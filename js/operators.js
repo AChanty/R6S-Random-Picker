@@ -222,6 +222,11 @@ export const defenders = [
       icon: 'img/op-icons/ela.svg',
    },
    {
+      name: 'Fenrir',
+      image: 'img/op-portraits/fenrir.png',
+      icon: 'img/op-icons/fenrir.png',
+   },
+   {
       name: 'Frost',
       image: 'img/op-portraits/frost.webp',
       icon: 'img/op-icons/frost.svg',
