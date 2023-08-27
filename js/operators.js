@@ -130,6 +130,11 @@ export const attackers = [
       icon: 'img/op-icons/osa.svg',
    },
    {
+      name: 'Ram',
+      image: 'img/op-portraits/ram.webp',
+      icon: 'img/op-icons/ram.png',
+   },
+   {
       name: 'Sens',
       image: 'img/op-portraits/sens.webp',
       icon: 'img/op-icons/sens.svg',
