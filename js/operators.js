@@ -327,6 +327,11 @@ export const defenders = [
       icon: 'img/op-icons/thunderbird.svg',
    },
    {
+      name: 'Tubarão',
+      image: 'img/op-portraits/tubarao.png',
+      icon: 'img/op-icons/tubarao.png',
+   },
+   {
       name: 'Valkyrie',
       image: 'img/op-portraits/valkyrie.webp',
       icon: 'img/op-icons/valkyrie.svg',
